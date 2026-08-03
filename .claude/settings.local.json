@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:flowards.wordpress.com)",
+      "WebFetch(domain:neophilya.wordpress.com)"
+    ]
+  }
+}
