@@ -33,7 +33,7 @@
   --color-accent-soft: #e3cd2433;
   --color-teal: #2dd6c4;
   --color-ink: #f3f1e7;
-  --color-muted: #8fa39c;
+  --color-muted: #b7c9c4;
   --color-hairline: #ffffff26;
   --color-card-bg: #ffffff;
   --color-card-text: #101615;
@@ -133,7 +133,7 @@ h1, h2, h3, h4 {
 .section-kicker {
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-muted);
   margin-bottom: 1rem;
@@ -277,7 +277,7 @@ section {
 }
 
 .main-nav a {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -465,7 +465,7 @@ section {
 }
 
 .bio-content p {
-  font-size: 0.98rem;
+  font-size: 1rem;
   text-align: left;
   color: var(--color-muted);
 }
@@ -554,7 +554,7 @@ details.timeline[open] summary::before {
 .timeline-list li {
   position: relative;
   padding: 0 0 1.25rem 1.5rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--color-muted);
 }
 
@@ -613,7 +613,7 @@ details.timeline[open] summary::before {
 }
 
 .reference-text-badge {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -623,7 +623,7 @@ details.timeline[open] summary::before {
 .credibility-links {
   margin-top: 2rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--color-muted);
 }
 
@@ -756,7 +756,7 @@ details.timeline[open] summary::before {
 }
 
 .hex-card p {
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   color: var(--color-muted);
   max-width: 12.5rem;
   line-height: 1.4;
@@ -976,7 +976,7 @@ details.timeline[open] summary::before {
 }
 
 .skill-leaf {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--color-muted);
   border: 1px solid var(--color-hairline);
   border-radius: 999px;
@@ -1035,7 +1035,7 @@ details.timeline[open] summary::before {
 }
 
 .word-bubble .wb-4 {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-muted);
 }
@@ -1078,7 +1078,7 @@ details.timeline[open] summary::before {
 }
 
 .process-step p {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--color-muted);
 }
 
@@ -1119,7 +1119,7 @@ details.timeline[open] summary::before {
 }
 
 .mandate-card .role {
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   color: var(--color-muted);
   margin-bottom: 0.5rem;
 }
@@ -1131,14 +1131,14 @@ details.timeline[open] summary::before {
 }
 
 .mandate-card .client {
-  font-size: 0.84rem;
+  font-size: 0.88rem;
   font-style: italic;
   color: var(--color-muted);
   margin-bottom: 0.9rem;
 }
 
 .mandate-card .impact {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border-top: 1px solid var(--color-hairline);
   padding-top: 0.85rem;
   margin-top: 0.85rem;
@@ -1182,7 +1182,7 @@ details.earlier-stations {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--color-muted);
   display: grid;
   gap: 0.4rem;
@@ -1469,7 +1469,7 @@ article.post p {
 .site-footer {
   padding: 3rem 1.5rem;
   text-align: center;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--color-muted);
 }
 
