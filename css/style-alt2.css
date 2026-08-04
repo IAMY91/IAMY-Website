@@ -975,19 +975,62 @@ details.timeline[open] summary::before {
   background: var(--color-hairline);
 }
 
+.skill-leaf-wrap {
+  position: relative;
+}
+
 .skill-leaf {
+  display: inline-block;
+  font-family: var(--font-body);
   font-size: 0.85rem;
   color: var(--color-muted);
+  background: none;
   border: 1px solid var(--color-hairline);
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
   white-space: nowrap;
+  cursor: pointer;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.skill-leaf:hover {
+.skill-leaf:hover,
+.skill-leaf:focus-visible,
+.skill-leaf-wrap.is-open .skill-leaf {
   color: var(--color-ink);
   border-color: var(--color-teal);
+}
+
+/* Info-Popover pro Kompetenz — erscheint bei Hover/Focus und bleibt nach
+   Klick offen (per JS .is-open), analog zu den .hex-detail-Panels bei den
+   Expertise-Hexagons, nur als kompakte Karte statt Hexagon. */
+.skill-leaf__info {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 30;
+  width: 230px;
+  transform: translateX(-50%) translateY(4px);
+  background: linear-gradient(160deg, #0d2b28 0%, var(--color-base) 75%);
+  border: 1px solid var(--color-teal);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--color-ink);
+  text-align: left;
+  white-space: normal;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.skill-leaf-wrap:hover .skill-leaf__info,
+.skill-leaf:focus-visible + .skill-leaf__info,
+.skill-leaf-wrap.is-open .skill-leaf__info {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
 }
 
 /* Branchen & Kontexte als Word Bubble — Größe signalisiert Gewichtung,

@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   initActiveNavHighlight();
   initFormPlaceholders();
+  initSkillTooltips();
 });
 
 function initNavToggle() {
@@ -105,4 +106,34 @@ function initFormPlaceholders() {
       form.reset();
     });
   });
+}
+
+// Skill-Tree-Kompetenzen: Info-Popover erscheint per CSS bei Hover/Focus.
+// Zusätzlich per Klick offen halten (u.a. für Touch-Geräte ohne Hover) und
+// beim Klick außerhalb wieder schließen.
+function initSkillTooltips() {
+  const wraps = document.querySelectorAll('.skill-leaf-wrap');
+  if (!wraps.length) return;
+
+  const closeAll = (except) => {
+    wraps.forEach((wrap) => {
+      if (wrap === except) return;
+      wrap.classList.remove('is-open');
+      wrap.querySelector('.skill-leaf')?.setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  wraps.forEach((wrap) => {
+    const button = wrap.querySelector('.skill-leaf');
+    if (!button) return;
+
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isOpen = wrap.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(isOpen));
+      closeAll(wrap);
+    });
+  });
+
+  document.addEventListener('click', () => closeAll(null));
 }
