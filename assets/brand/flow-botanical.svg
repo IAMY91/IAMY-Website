@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 1040" fill="none">
+<defs>
+ <linearGradient id="leaf" x1="200" y1="900" x2="720" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#245a46" stop-opacity="0"/><stop offset=".48" stop-color="#235b46" stop-opacity=".55"/><stop offset="1" stop-color="#0e3126" stop-opacity=".15"/></linearGradient>
+ <linearGradient id="vein" x1="120" y1="950" x2="750" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#80a88a" stop-opacity=".12"/><stop offset=".5" stop-color="#a7c9a0" stop-opacity=".8"/><stop offset="1" stop-color="#8fb58d" stop-opacity=".15"/></linearGradient>
+ <linearGradient id="gold" x1="120" y1="1000" x2="750" y2="75" gradientUnits="userSpaceOnUse"><stop stop-color="#c6a563" stop-opacity="0"/><stop offset=".48" stop-color="#f4d390"/><stop offset="1" stop-color="#c5a56c" stop-opacity=".3"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#97b983" stop-opacity=".13"/><stop offset="1" stop-color="#97b983" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="525" cy="520" rx="390" ry="480" fill="url(#halo)"/>
+<path d="M170 935C28 520 344 174 758 75C834 403 821 766 170 935Z" fill="url(#leaf)"/>
+
+<path d="M180.7 919.4C174.4 899.4 93.0 1032.2 93.0 902.2M180.7 919.4C275.7 959.4 156.4 1023.9 196.4 923.9" stroke="url(#vein)" stroke-width=".8" opacity="0.32"/>
+<path d="M191.4 903.7C178.8 883.7 96.1 999.5 96.1 869.5M191.4 903.7C286.4 943.7 182.7 1012.8 222.7 912.8" stroke="url(#vein)" stroke-width=".8" opacity="0.35"/>
+<path d="M202.1 888.1C183.3 868.1 99.2 966.9 99.2 836.9M202.1 888.1C297.1 928.1 209.0 1001.7 249.0 901.7" stroke="url(#vein)" stroke-width=".8" opacity="0.37"/>
+<path d="M212.8 872.5C187.8 852.5 102.3 934.5 102.3 804.5M212.8 872.5C307.8 912.5 235.1 990.6 275.1 890.6" stroke="url(#vein)" stroke-width=".8" opacity="0.39"/>
+<path d="M223.5 856.8C192.5 836.8 105.7 902.3 105.7 772.3M223.5 856.8C318.5 896.8 260.9 979.4 300.9 879.4" stroke="url(#vein)" stroke-width=".8" opacity="0.41"/>
+<path d="M234.1 841.2C197.2 821.2 109.1 870.4 109.1 740.4M234.1 841.2C329.1 881.2 286.6 968.1 326.6 868.1" stroke="url(#vein)" stroke-width=".8" opacity="0.43"/>
+<path d="M244.8 825.5C202.0 805.5 112.7 838.8 112.7 708.8M244.8 825.5C339.8 865.5 311.9 956.7 351.9 856.7" stroke="url(#vein)" stroke-width=".8" opacity="0.46"/>
+<path d="M255.5 809.9C207.0 789.9 116.6 807.5 116.6 677.5M255.5 809.9C350.5 849.9 336.9 945.2 376.9 845.2" stroke="url(#vein)" stroke-width=".8" opacity="0.48"/>
+<path d="M266.2 794.3C212.1 774.3 120.6 776.8 120.6 646.8M266.2 794.3C361.2 834.3 361.4 933.6 401.4 833.6" stroke="url(#vein)" stroke-width=".8" opacity="0.50"/>
+<path d="M276.9 778.6C217.4 758.6 125.0 746.4 125.0 616.4M276.9 778.6C371.9 818.6 385.6 921.9 425.6 821.9" stroke="url(#vein)" stroke-width=".8" opacity="0.52"/>
+<path d="M287.6 763.0C222.9 743.0 129.6 716.7 129.6 586.7M287.6 763.0C382.6 803.0 409.2 910.0 449.2 810.0" stroke="url(#vein)" stroke-width=".8" opacity="0.54"/>
+<path d="M298.3 747.4C228.7 727.4 134.5 687.5 134.5 557.5M298.3 747.4C393.3 787.4 432.4 898.0 472.4 798.0" stroke="url(#vein)" stroke-width=".8" opacity="0.55"/>
+<path d="M309.0 731.7C234.6 711.7 139.7 658.9 139.7 528.9M309.0 731.7C404.0 771.7 454.9 885.8 494.9 785.8" stroke="url(#vein)" stroke-width=".8" opacity="0.57"/>
+<path d="M319.7 716.1C240.8 696.1 145.3 631.0 145.3 501.0M319.7 716.1C414.7 756.1 476.9 873.5 516.9 773.5" stroke="url(#vein)" stroke-width=".8" opacity="0.59"/>
+<path d="M330.4 700.5C247.2 680.5 151.3 603.7 151.3 473.7M330.4 700.5C425.4 740.5 498.2 860.9 538.2 760.9" stroke="url(#vein)" stroke-width=".8" opacity="0.60"/>
+<path d="M341.1 684.8C253.9 664.8 157.6 577.2 157.6 447.2M341.1 684.8C436.1 724.8 518.8 848.2 558.8 748.2" stroke="url(#vein)" stroke-width=".8" opacity="0.62"/>
+<path d="M351.7 669.2C260.9 649.2 164.4 551.5 164.4 421.5M351.7 669.2C446.7 709.2 538.8 835.2 578.8 735.2" stroke="url(#vein)" stroke-width=".8" opacity="0.63"/>
+<path d="M362.4 653.5C268.2 633.5 171.6 526.6 171.6 396.6M362.4 653.5C457.4 693.5 557.9 822.1 597.9 722.1" stroke="url(#vein)" stroke-width=".8" opacity="0.64"/>
+<path d="M373.1 637.9C275.8 617.9 179.3 502.6 179.3 372.6M373.1 637.9C468.1 677.9 576.3 808.7 616.3 708.7" stroke="url(#vein)" stroke-width=".8" opacity="0.65"/>
+<path d="M383.8 622.3C283.8 602.3 187.4 479.4 187.4 349.4M383.8 622.3C478.8 662.3 594.0 795.0 634.0 695.0" stroke="url(#vein)" stroke-width=".8" opacity="0.66"/>
+<path d="M394.5 606.6C292.0 586.6 196.0 457.1 196.0 327.1M394.5 606.6C489.5 646.6 610.8 781.2 650.8 681.2" stroke="url(#vein)" stroke-width=".8" opacity="0.67"/>
+<path d="M405.2 591.0C300.6 571.0 205.0 435.7 205.0 305.7M405.2 591.0C500.2 631.0 626.7 767.1 666.7 667.1" stroke="url(#vein)" stroke-width=".8" opacity="0.68"/>
+<path d="M415.9 575.4C309.5 555.4 214.6 415.2 214.6 285.2M415.9 575.4C510.9 615.4 641.9 752.7 681.9 652.7" stroke="url(#vein)" stroke-width=".8" opacity="0.69"/>
+<path d="M426.6 559.7C318.8 539.7 224.7 395.7 224.7 265.7M426.6 559.7C521.6 599.7 656.1 738.1 696.1 638.1" stroke="url(#vein)" stroke-width=".8" opacity="0.69"/>
+<path d="M437.3 544.1C328.4 524.1 235.3 377.1 235.3 247.1M437.3 544.1C532.3 584.1 669.5 723.3 709.5 623.3" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M448.0 528.5C338.4 508.5 246.4 359.6 246.4 229.6M448.0 528.5C543.0 568.5 682.0 708.2 722.0 608.2" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M458.7 512.8C348.7 492.8 258.0 342.9 258.0 212.9M458.7 512.8C553.7 552.8 693.5 692.8 733.5 592.8" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M469.3 497.2C359.4 477.2 270.1 327.3 270.1 197.3M469.3 497.2C564.3 537.2 704.2 677.1 744.2 577.1" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M480.0 481.5C370.4 461.5 282.8 312.6 282.8 182.6M480.0 481.5C575.0 521.5 714.0 661.3 754.0 561.3" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M490.7 465.9C381.8 445.9 296.0 299.0 296.0 169.0M490.7 465.9C585.7 505.9 722.9 645.1 762.9 545.1" stroke="url(#vein)" stroke-width=".8" opacity="0.70"/>
+<path d="M501.4 450.3C393.6 430.3 309.7 286.2 309.7 156.2M501.4 450.3C596.4 490.3 730.9 628.7 770.9 528.7" stroke="url(#vein)" stroke-width=".8" opacity="0.69"/>
+<path d="M512.1 434.6C405.7 414.6 323.9 274.5 323.9 144.5M512.1 434.6C607.1 474.6 738.1 612.0 778.1 512.0" stroke="url(#vein)" stroke-width=".8" opacity="0.69"/>
+<path d="M522.8 419.0C418.2 399.0 338.6 263.7 338.6 133.7M522.8 419.0C617.8 459.0 744.3 595.1 784.3 495.1" stroke="url(#vein)" stroke-width=".8" opacity="0.68"/>
+<path d="M533.5 403.4C431.0 383.4 353.8 253.8 353.8 123.8M533.5 403.4C628.5 443.4 749.8 577.9 789.8 477.9" stroke="url(#vein)" stroke-width=".8" opacity="0.67"/>
+<path d="M544.2 387.7C444.1 367.7 369.5 244.8 369.5 114.8M544.2 387.7C639.2 427.7 754.3 560.5 794.3 460.5" stroke="url(#vein)" stroke-width=".8" opacity="0.66"/>
+<path d="M554.9 372.1C457.6 352.1 385.7 236.8 385.7 106.8M554.9 372.1C649.9 412.1 758.1 542.8 798.1 442.8" stroke="url(#vein)" stroke-width=".8" opacity="0.65"/>
+<path d="M565.6 356.5C471.4 336.5 402.4 229.5 402.4 99.5M565.6 356.5C660.6 396.5 761.1 525.0 801.1 425.0" stroke="url(#vein)" stroke-width=".8" opacity="0.64"/>
+<path d="M576.3 340.8C485.5 320.8 419.5 223.2 419.5 93.2M576.3 340.8C671.3 380.8 763.3 506.9 803.3 406.9" stroke="url(#vein)" stroke-width=".8" opacity="0.63"/>
+<path d="M586.9 325.2C499.8 305.2 437.0 217.6 437.0 87.6M586.9 325.2C681.9 365.2 764.7 488.5 804.7 388.5" stroke="url(#vein)" stroke-width=".8" opacity="0.62"/>
+<path d="M597.6 309.5C514.5 289.5 454.9 212.8 454.9 82.8M597.6 309.5C692.6 349.5 765.5 470.0 805.5 370.0" stroke="url(#vein)" stroke-width=".8" opacity="0.60"/>
+<path d="M608.3 293.9C529.4 273.9 473.2 208.8 473.2 78.8M608.3 293.9C703.3 333.9 765.5 451.3 805.5 351.3" stroke="url(#vein)" stroke-width=".8" opacity="0.59"/>
+<path d="M619.0 278.3C544.6 258.3 491.9 205.4 491.9 75.4M619.0 278.3C714.0 318.3 765.0 432.4 805.0 332.4" stroke="url(#vein)" stroke-width=".8" opacity="0.57"/>
+<path d="M629.7 262.6C560.1 242.6 511.0 202.7 511.0 72.7M629.7 262.6C724.7 302.6 763.8 413.3 803.8 313.3" stroke="url(#vein)" stroke-width=".8" opacity="0.55"/>
+<path d="M640.4 247.0C575.7 227.0 530.4 200.7 530.4 70.7M640.4 247.0C735.4 287.0 762.0 394.0 802.0 294.0" stroke="url(#vein)" stroke-width=".8" opacity="0.54"/>
+<path d="M651.1 231.4C591.6 211.4 550.0 199.2 550.0 69.2M651.1 231.4C746.1 271.4 759.8 374.6 799.8 274.6" stroke="url(#vein)" stroke-width=".8" opacity="0.52"/>
+<path d="M661.8 215.7C607.7 195.7 570.0 198.2 570.0 68.2M661.8 215.7C756.8 255.7 757.0 355.1 797.0 255.1" stroke="url(#vein)" stroke-width=".8" opacity="0.50"/>
+<path d="M672.5 200.1C623.9 180.1 590.2 197.7 590.2 67.7M672.5 200.1C767.5 240.1 753.8 335.4 793.8 235.4" stroke="url(#vein)" stroke-width=".8" opacity="0.48"/>
+<path d="M683.2 184.5C640.3 164.5 610.7 197.7 610.7 67.7M683.2 184.5C778.2 224.5 750.2 315.6 790.2 215.6" stroke="url(#vein)" stroke-width=".8" opacity="0.46"/>
+<path d="M693.9 168.8C656.9 148.8 631.4 198.0 631.4 68.0M693.9 168.8C788.9 208.8 746.3 295.7 786.3 195.7" stroke="url(#vein)" stroke-width=".8" opacity="0.43"/>
+<path d="M704.5 153.2C673.6 133.2 652.2 198.7 652.2 68.7M704.5 153.2C799.5 193.2 742.0 275.7 782.0 175.7" stroke="url(#vein)" stroke-width=".8" opacity="0.41"/>
+<path d="M715.2 137.5C690.3 117.5 673.2 199.6 673.2 69.6M715.2 137.5C810.2 177.5 737.5 255.7 777.5 155.7" stroke="url(#vein)" stroke-width=".8" opacity="0.39"/>
+<path d="M725.9 121.9C707.2 101.9 694.3 200.8 694.3 70.8M725.9 121.9C820.9 161.9 732.8 235.6 772.8 135.6" stroke="url(#vein)" stroke-width=".8" opacity="0.37"/>
+<path d="M736.6 106.3C724.1 86.3 715.5 202.1 715.5 72.1M736.6 106.3C831.6 146.3 728.0 215.4 768.0 115.4" stroke="url(#vein)" stroke-width=".8" opacity="0.35"/>
+<path d="M747.3 90.6C741.0 70.6 736.7 203.5 736.7 73.5M747.3 90.6C842.3 130.6 723.0 195.2 763.0 95.2" stroke="url(#vein)" stroke-width=".8" opacity="0.32"/>
+<path d="M-180 780C145 530 230 1040 560 750S840 600 1050 655" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 790C145 540 230 1050 560 760S840 610 1050 665" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 800C145 550 230 1060 560 770S840 620 1050 675" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 810C145 560 230 1070 560 780S840 630 1050 685" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 820C145 570 230 1080 560 790S840 640 1050 695" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 830C145 580 230 1090 560 800S840 650 1050 705" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 840C145 590 230 1100 560 810S840 660 1050 715" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 850C145 600 230 1110 560 820S840 670 1050 725" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 860C145 610 230 1120 560 830S840 680 1050 735" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 870C145 620 230 1130 560 840S840 690 1050 745" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 880C145 630 230 1140 560 850S840 700 1050 755" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 890C145 640 230 1150 560 860S840 710 1050 765" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 900C145 650 230 1160 560 870S840 720 1050 775" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 910C145 660 230 1170 560 880S840 730 1050 785" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 920C145 670 230 1180 560 890S840 740 1050 795" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 930C145 680 230 1190 560 900S840 750 1050 805" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 940C145 690 230 1200 560 910S840 760 1050 815" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 950C145 700 230 1210 560 920S840 770 1050 825" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 960C145 710 230 1220 560 930S840 780 1050 835" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 970C145 720 230 1230 560 940S840 790 1050 845" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 980C145 730 230 1240 560 950S840 800 1050 855" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 990C145 740 230 1250 560 960S840 810 1050 865" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1000C145 750 230 1260 560 970S840 820 1050 875" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1010C145 760 230 1270 560 980S840 830 1050 885" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1020C145 770 230 1280 560 990S840 840 1050 895" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1030C145 780 230 1290 560 1000S840 850 1050 905" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1040C145 790 230 1300 560 1010S840 860 1050 915" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1050C145 800 230 1310 560 1020S840 870 1050 925" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1060C145 810 230 1320 560 1030S840 880 1050 935" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1070C145 820 230 1330 560 1040S840 890 1050 945" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1080C145 830 230 1340 560 1050S840 900 1050 955" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1090C145 840 230 1350 560 1060S840 910 1050 965" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1100C145 850 230 1360 560 1070S840 920 1050 975" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M-180 1110C145 860 230 1370 560 1080S840 930 1050 985" stroke="url(#vein)" stroke-width=".7" opacity=".25"/>
+<path d="M80 1060C196 819 468 564 758 75" stroke="url(#gold)" stroke-width="2"/>
+<path d="M143 990C278 813 511 811 861 695" stroke="url(#gold)" stroke-width="1" opacity=".7"/>
+<circle cx="416" cy="582" r="5" fill="#edcf91"/><circle cx="416" cy="582" r="15" stroke="#edcf91" stroke-opacity=".25"/>
+</svg>

@@ -1,10 +1,11 @@
-// FLOWARDS — Mobile-Nav, aktive Sektion, Formular-UI (ohne Versandlogik)
+// FLOWARDS — Navigation, Kontaktanfrage und zugängliche Methoden-Popover.
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   initActiveNavHighlight();
   initFormPlaceholders();
   initSkillTooltips();
+  initServiceLinks();
 });
 
 function initNavToggle() {
@@ -24,6 +25,17 @@ function initNavToggle() {
   nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => setOpen(false));
   });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('is-open')) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) setOpen(false);
+  });
+  window.matchMedia('(min-width: 901px)').addEventListener('change', () => setOpen(false));
 }
 
 function initActiveNavHighlight() {
@@ -47,10 +59,8 @@ function initActiveNavHighlight() {
   sections.forEach((section) => observer.observe(section));
 }
 
-// Die Formulare (Buchung & Kontakt) haben kein eigenes Backend. Als
-// pragmatischer, funktionierender Zwischenstand öffnen sie beim Absenden das
-// E-Mail-Programm des Besuchers mit einer vorausgefüllten Nachricht, statt nur
-// eine Erfolgsmeldung zu simulieren, ohne dass wirklich etwas ankommt.
+// Kein eigenes Backend: Das Formular bereitet eine E-Mail vor. Der sichtbare
+// Link öffnet anschließend das E-Mail-Programm. Die Eingaben bleiben erhalten.
 // TODO: Bei Bedarf durch einen echten Formular-Backend-Dienst ersetzen
 // (z.B. eigenes Backend, Formspree, Netlify Forms).
 const CONTACT_EMAIL = 'ilyalex.yacine@gmail.com';
@@ -79,7 +89,10 @@ function initFormPlaceholders() {
 
       const bodyLines = [];
       data.forEach((value, key) => {
-        const text = value.toString().trim();
+        const field = form.elements.namedItem(key);
+        const text = field instanceof HTMLSelectElement
+          ? field.selectedOptions[0]?.textContent.trim()
+          : value.toString().trim();
         if (!text) return;
         bodyLines.push(`${FIELD_LABELS[key] || key}: ${text}`);
       });
@@ -95,15 +108,15 @@ function initFormPlaceholders() {
         `?subject=${encodeURIComponent(subject)}` +
         `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 
-      window.location.href = mailtoUrl;
-
       if (status) {
         status.textContent =
-          'Dein E-Mail-Programm öffnet sich mit einer vorausgefüllten Nachricht — bitte dort absenden.';
+          'Deine Anfrage ist vorbereitet. Öffne jetzt den Entwurf und sende ihn in deinem E-Mail-Programm ab: ';
+        const fallback = document.createElement('a');
+        fallback.href = mailtoUrl;
+        fallback.textContent = 'Jetzt E-Mail-Entwurf öffnen';
+        status.append(fallback);
         status.classList.add('is-visible');
       }
-
-      form.reset();
     });
   });
 }
@@ -136,4 +149,17 @@ function initSkillTooltips() {
   });
 
   document.addEventListener('click', () => closeAll(null));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeAll(null);
+  });
+}
+
+function initServiceLinks() {
+  const service = document.querySelector('#booking-service');
+  if (!service) return;
+  document.querySelectorAll('a[data-service]').forEach((link) => {
+    link.addEventListener('click', () => {
+      service.value = link.dataset.service;
+    });
+  });
 }
