@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" fill="none" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="contour" x1="0" y1="300" x2="1600" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5e9394" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#5e9394" stop-opacity=".45"/>
+      <stop offset=".68" stop-color="#9ebcba" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#5e9394" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="300" x2="1600" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c1a16b" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#c1a16b" stop-opacity=".2"/>
+      <stop offset=".78" stop-color="#c1a16b" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#c1a16b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g stroke-width="1" stroke-linecap="round">
+    <path d="M-100 150C180 35 360 335 740 185S1250 70 1700 145" stroke="url(#contour)"/>
+    <path d="M-100 157C180 42 360 342 740 192S1250 77 1700 152" stroke="url(#contour)"/>
+    <path d="M-100 164C180 49 360 349 740 199S1250 84 1700 159" stroke="url(#contour)"/>
+    <path d="M-100 171C180 56 360 356 740 206S1250 91 1700 166" stroke="url(#contour)"/>
+    <path d="M-100 178C180 63 360 363 740 213S1250 98 1700 173" stroke="url(#contour)"/>
+    <path d="M-100 185C180 70 360 370 740 220S1250 105 1700 180" stroke="url(#accent)"/>
+    <path d="M-100 192C180 77 360 377 740 227S1250 112 1700 187" stroke="url(#contour)"/>
+    <path d="M-100 199C180 84 360 384 740 234S1250 119 1700 194" stroke="url(#contour)"/>
+    <path d="M-100 206C180 91 360 391 740 241S1250 126 1700 201" stroke="url(#contour)"/>
+    <path d="M-100 213C180 98 360 398 740 248S1250 133 1700 208" stroke="url(#contour)"/>
+    <path d="M-100 220C180 105 360 405 740 255S1250 140 1700 215" stroke="url(#contour)"/>
+    <path d="M-100 227C180 112 360 412 740 262S1250 147 1700 222" stroke="url(#contour)"/>
+    <path d="M-100 234C180 119 360 419 740 269S1250 154 1700 229" stroke="url(#contour)"/>
+    <path d="M-100 241C180 126 360 426 740 276S1250 161 1700 236" stroke="url(#contour)"/>
+    <path d="M-100 248C180 133 360 433 740 283S1250 168 1700 243" stroke="url(#accent)"/>
+    <path d="M-100 255C180 140 360 440 740 290S1250 175 1700 250" stroke="url(#contour)"/>
+    <path d="M-100 262C180 147 360 447 740 297S1250 182 1700 257" stroke="url(#contour)"/>
+    <path d="M-100 269C180 154 360 454 740 304S1250 189 1700 264" stroke="url(#contour)"/>
+    <path d="M-100 276C180 161 360 461 740 311S1250 196 1700 271" stroke="url(#contour)"/>
+  </g>
+</svg>
