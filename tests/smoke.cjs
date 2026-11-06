@@ -82,7 +82,7 @@ async function main() {
     console.log('PASS: responsive layout, mobile menu/focus, disclosures, service selection, popovers, validation, email draft.');
 
     for (const path of [
-      'blog/', 'blog/evolutionaere-organisationen.html', 'blog/flow-und-potenzial.html',
+      'ueber-mich.html', 'blog/', 'blog/evolutionaere-organisationen.html', 'blog/flow-und-potenzial.html',
       'blog/regeneratives-leadership.html', 'impressum.html', 'datenschutz.html',
     ]) {
       assert.equal((await page.goto(localUrl(path))).status(), 200, path);
@@ -94,6 +94,26 @@ async function main() {
       await page.locator('.nav-toggle').click();
       console.log('PASS:', path);
     }
+
+    await page.goto(localUrl('ueber-mich.html'));
+    assert.equal(await page.locator('h1').count(), 1);
+    assert.equal(await page.locator('.qualification-row').count(), 12);
+    assert.equal(await page.locator('.journey-station').count(), 7);
+    assert.equal(await page.locator('.main-nav a[aria-current="page"]').getAttribute('href'), 'ueber-mich.html');
+    assert((await page.locator('.journey-station').first().textContent()).includes('10/2024 – heute'));
+    assert((await page.locator('.journey-station').nth(1).textContent()).includes('02/2022 – 05/2024'));
+    const cvLink = page.locator('.cv-download a[download]');
+    const cvResponse = await page.request.get(localUrl(await cvLink.getAttribute('href')));
+    assert.equal(cvResponse.status(), 200);
+    assert(cvResponse.headers()['content-type'].includes('application/pdf'));
+    assert.equal((await cvResponse.body()).subarray(0, 5).toString(), '%PDF-');
+    for (const width of [1440, 768, 390, 320]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.evaluate(() => document.fonts.ready);
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+        `About page overflow at ${width}px`);
+    }
+    console.log('PASS: separate About page, CV dates, 12 qualifications, 7 career stations, PDF download and responsive layout.');
 
     await page.goto(base);
     const references = await page.evaluate(() => {

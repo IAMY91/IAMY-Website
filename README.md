@@ -18,6 +18,7 @@ Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketi
 - `referenzen.html`: acht Projektkacheln, 24 Logo-Kacheln und acht Fallbeispiele.
 - `docs/logo-sources-a.json` / `docs/logo-sources-b.json`: recherchierte Original-Logoquellen.
 - `docs/reference-content.md`: Inhaltseinordnung, Logoherkunft und Designhinweise.
+- `ueber-mich.html`: eigenständige Vorstellung mit Qualifikationen, Lebenslauf-Download und beruflicher Timeline.
 - `css/flowards.css`: gemeinsames Design für Startseite, Blog und rechtliche Seiten.
 - `js/main.js`: Navigation, Kontaktentwurf, Angebotsauswahl und Methoden-Popover.
 - `assets/brand/flow-botanical.svg`: eigenständige biomimetische Liniengrafik.
