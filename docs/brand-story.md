@@ -20,6 +20,12 @@ Die Startseite folgt dem StoryBrand-SB7-Modell. Die Menschen, die Veränderung i
 - Die aktuelle Startseite, der Blog und die rechtlichen Unterseiten verwenden `css/flowards.css`. Historische `index-alt*`-Varianten bleiben erhalten.
 - Vorhandene Projekterfahrung, frühere Stationen, Publikationen, Qualifikationen und Methoden bleiben zugänglich. Es wurden keine Kundenzitate oder Erfolgszahlen erfunden. Bilder aus der Workshop- und Speaker-Arbeit sind entsprechend gekennzeichnet.
 
+## Über mich: Qualifikationen und Wirkungsstationen
+
+Die eigenständige Seite `ueber-mich.html` zeigt zwölf im Lebenslauf belegte Aus- und Weiterbildungen mit Zeitraum, Anbieter und redaktioneller Kurzbeschreibung. Darunter steht der Download-Link zum unverändert hochgeladenen `Ilya_Yacine_CV_2026.pdf`. Die Startseite behält eine kurze Vorstellung mit Link zur Über-mich-Seite. Die sieben beruflichen Stationen sind als vertikale Timeline dargestellt, absteigend nach Beginn der Tätigkeit. Zeitliche Überschneidungen bleiben erhalten.
+
+Quelle: vom Nutzer bereitgestellter Lebenslauf `Ilya_Yacine_CV_2026.pdf`. Bei Abweichungen von den bisherigen Website-Angaben wurden die Berufs- und Bildungsdaten im Über-mich-Bereich an das PDF angepasst. Der LinkedIn-Abruf ist weiterhin durch die Netzwerkfreigabe gesperrt (CONNECT 403). Die Liste behauptet deshalb keine vollständige Übernahme der LinkedIn-Zertifikate; ExO Foundations und Führung in selbstgesteuerten Teams wurden mangels Beleg im PDF aus dieser Leiste entfernt. Die einzelnen Kursbeschreibungen sind redaktionelle Zusammenfassungen, keine Zitate aus LinkedIn.
+
 ## Kontaktverhalten
 
 Das Formular validiert Name, E-Mail und Nachricht und erstellt einen `mailto:`-Entwurf mit lesbaren Leistungsbezeichnungen. Erst der danach angezeigte Link öffnet das E-Mail-Programm. Die Website versendet keine Nachrichten und speichert keine Formulardaten. Ein vorhandenes E-Mail-Programm ist für diesen Weg erforderlich; die direkte E-Mail-Adresse bleibt sichtbar.

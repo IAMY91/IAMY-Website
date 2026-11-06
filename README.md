@@ -15,6 +15,7 @@ Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketi
 ## Aufbau
 
 - `index.html`: aktuelle Startseite.
+- `ueber-mich.html`: eigenständige Vorstellung mit Qualifikationen, Lebenslauf-Download und beruflicher Timeline.
 - `css/flowards.css`: gemeinsames Design für Startseite, Blog und rechtliche Seiten.
 - `js/main.js`: Navigation, Kontaktentwurf, Angebotsauswahl und Methoden-Popover.
 - `assets/brand/flow-botanical.svg`: eigenständige biomimetische Liniengrafik.
