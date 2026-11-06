@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Einstein Center Digital Future",
+    "official_page": "https://www.digital-future.berlin",
+    "asset_url": "https://www.digital-future.berlin/Logo-ecdf.svg",
+    "local_path": "assets/references/einstein-center.svg",
+    "bytes": 9761,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "Tealbirds",
+    "official_page": "https://www.tealbirds.de",
+    "asset_url": "https://images.squarespace-cdn.com/content/v1/63519a6ffc940124b3bc5d6a/b3eab4bc-b2aa-4b66-a4d8-2d9bdce7f6d3/TealBirds-RGB-01.jpg?format=500w",
+    "local_path": "assets/references/tealbirds-original.jpg",
+    "bytes": 10921,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "CREATE Regeneration",
+    "official_page": "https://create-regeneration.org",
+    "asset_url": "https://create-regeneration.org/wp-content/uploads/2025/02/create-regeneration-final-logo_create-regeneration-logo-linksbuendig-300x105.png",
+    "local_path": "assets/references/create-regeneration.png",
+    "bytes": 7292,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "Leadership³",
+    "official_page": "https://www.kollektivefuehrung.de",
+    "asset_url": "https://www.kollektivefuehrung.de/wp-content/uploads/2020/01/cropped-leadership-logo-1.jpg",
+    "local_path": "assets/references/leadership3.jpg",
+    "bytes": 10130,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "The Good Change",
+    "official_page": "https://www.thegoodchange.co",
+    "asset_url": "https://images.squarespace-cdn.com/content/v1/63e963c3d2de5b1e05741284/6ce64d47-ceda-430e-bbea-18fc440b2410/TheGoodChangeLogo_Green_Mid.png?format=500w",
+    "local_path": "assets/references/the-good-change.png",
+    "bytes": 15382,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "TU Berlin",
+    "official_page": "https://www.tu.berlin",
+    "asset_url": "https://www.static.tu.berlin/_assets/2ff76cde2126808ef662c87f1945ad8e/Images/Logos/tu-berlin-logo-long-red.svg",
+    "local_path": "assets/references/tu-berlin.svg",
+    "bytes": 5841,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "SciLead",
+    "official_page": "https://www.scilead.de",
+    "asset_url": "https://static.wixstatic.com/media/c3e693_290762ca7c7e44ef9ef802cea1ce292f~mv2.png/v1/crop/x_84,y_156,w_687,h_216/fill/w_500,h_157,al_c,q_85,usm_0.66_1.00_0.01/SciLead_Logo_March%202023.png",
+    "local_path": "assets/references/scilead-original.png",
+    "bytes": 25259,
+    "status": "verified official-site asset"
+  },
+  {
+    "name": "COBIOM",
+    "official_page": "https://www.linkedin.com/company/cobiom",
+    "asset_url": "https://media.licdn.com/dms/image/v2/C4D0BAQFZQDLhEchAhQ/company-logo_200_200/company-logo_200_200/0/1630470735682/cobiom_logo?e=2147483647&v=beta&t=OrXBh8Q1VN5qIiK_tyQTGxRJYuAnd8kHBV_Lt0SbtrA",
+    "local_path": "assets/references/cobiom-original.jpg",
+    "bytes": 7544,
+    "status": "Official organization LinkedIn logo; corporate site currently 503"
+  },
+  {
+    "name": "DigitalService",
+    "official_page": "https://digitalservice.bund.de/",
+    "asset_url": "https://digitalservice.bund.de/assets/img/ds4g-logo.svg",
+    "local_path": "assets/references/digitalservice.svg",
+    "bytes": 3689,
+    "status": "Refreshed current official-site SVG"
+  },
+  {
+    "name": "adesso SE",
+    "official_page": "https://www.adesso.de/de/",
+    "asset_url": "https://www.adesso.de/technisches/layout/svgs/svgsprite.html#adesso-logo-general",
+    "local_path": "assets/references/adesso-original.svg",
+    "bytes": 2773,
+    "status": "Original official sprite symbol extracted unchanged geometry into standalone SVG; actual official header CSS colors #006ec7 and #887d75 applied",
+    "color_source": "https://www.adesso.de/technisches/layout/css/style.css?v=3706179"
+  }
+]
