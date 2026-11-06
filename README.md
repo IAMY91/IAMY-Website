@@ -1,6 +1,6 @@
 # FLOWARDS · Ilya Alexander Yacine
 
-Statische Website für Organisationsentwicklung, Leadership Coaching und Facilitation. Die aktuelle Gestaltung verbindet eine StoryBrand-SB7-Struktur mit einer grünen, biomimetischen Bildsprache.
+Statische Website für Organisationsentwicklung, Leadership Coaching und Facilitation. Die aktuelle Gestaltung verbindet eine StoryBrand-SB7-Struktur mit einer petrolfarbenen, goldenen und biomimetischen Bildsprache. Das Hero-Porträt geht durch CSS-Masken in den Slogan über.
 
 ## Lokal starten
 
@@ -15,6 +15,9 @@ Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketi
 ## Aufbau
 
 - `index.html`: aktuelle Startseite.
+- `referenzen.html`: acht Projektkacheln, 24 Logo-Kacheln und acht Fallbeispiele.
+- `docs/logo-sources-a.json` / `docs/logo-sources-b.json`: recherchierte Original-Logoquellen.
+- `docs/reference-content.md`: Inhaltseinordnung, Logoherkunft und Designhinweise.
 - `css/flowards.css`: gemeinsames Design für Startseite, Blog und rechtliche Seiten.
 - `js/main.js`: Navigation, Kontaktentwurf, Angebotsauswahl und Methoden-Popover.
 - `assets/brand/flow-botanical.svg`: eigenständige biomimetische Liniengrafik.

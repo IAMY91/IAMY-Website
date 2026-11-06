@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Stadt Leipzig",
+    "official_page": "https://www.leipzig.de",
+    "asset_url": "https://www.leipzig.de/_assets/74dc7f3d48b9b3e9733c15783f1c75b6/Images/Stadt-Leipzig-Logo.svg",
+    "local_path": "assets/references/stadt-leipzig.svg",
+    "bytes": 6508,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "Hasso-Plattner-Institut",
+    "official_page": "https://hpi.de/",
+    "asset_url": "https://hpi.de/_assets/7b3ba8bb3871137dffa4d9cccacf730f/Images/hpi-logo-colored.svg",
+    "local_path": "assets/references/hpi.svg",
+    "bytes": 10426,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "Landeshauptstadt Potsdam",
+    "official_page": "https://www.potsdam.de/de",
+    "asset_url": "https://www.potsdam.de/system/files/styles/potsdam_main_logo_xl_2x/private/image/Logo-Landeshauptstadt-Potsdam.png?itok=_ioN-drR",
+    "local_path": "assets/references/stadt-potsdam.png",
+    "bytes": 31353,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "DAK-Gesundheit",
+    "official_page": "https://www.dak.de/presse/fotos-grafiken/dak-gesundheit_156092",
+    "asset_url": "https://www.dak.de/api/image-forward/caas/v1/media/56726/data/18cf48715c6dd42e6be5461898c85770/logo-der-dak-gesundheit-ein-leben-lang.png",
+    "local_path": "assets/references/dak.png",
+    "bytes": 27525,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "Die Bundesregierung (kein eigenständiges Logo Bundesverwaltung)",
+    "official_page": "https://styleguide.bundesregierung.gov.de/sg-de/basiselemente/bildwortmarke/2048320-2048320",
+    "asset_url": "https://styleguide.bundesregierung.gov.de/resource/blob/2025164/2025510/f3d9f928c40efe0d4c7b169d75e02dd4/bwm-bundesregierung-data.png",
+    "local_path": "assets/references/bundesregierung.png",
+    "bytes": 58825,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "ITZBund",
+    "official_page": "https://www.itzbund.de/DE/home/home_node.html",
+    "asset_url": "https://www.itzbund.de/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&v=24",
+    "local_path": "assets/references/itzbund.svg",
+    "bytes": 37846,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "YNCORIS",
+    "official_page": "https://www.yncoris.com/",
+    "asset_url": "https://www.yncoris.com/_assets/16ab5c50287f0ec9ebe4d98e3b4f268e/Images/logo_v2.jpeg",
+    "local_path": "assets/references/yncoris.jpg",
+    "bytes": 150610,
+    "retrieved": "2026-11-06"
+  },
+  {
+    "name": "ADAC",
+    "official_page": "https://www.adac.de/",
+    "asset_url": "https://www.adac.de/assets/ui/shared-icons.svg?v6#Logo",
+    "local_path": "assets/references/adac.svg",
+    "bytes": 1233,
+    "retrieved": "2026-11-06",
+    "note": "Original Logo symbol extracted without changing path geometry. Official current header wordmark is black, normally on ADAC yellow background."
+  }
+]
