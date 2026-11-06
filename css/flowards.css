@@ -393,10 +393,10 @@ em{font-family:inherit;font-style:normal;font-weight:600;letter-spacing:inherit}
 @media(max-width:900px){.hero-portrait--workshop{right:-8%;width:76%}}
 @media(max-width:640px){.hero-portrait--workshop{top:0;right:0;width:100%;height:365px;opacity:1;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 92%,transparent),linear-gradient(#000 60%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 92%,transparent),linear-gradient(#000 60%,transparent 100%)}.hero-portrait--workshop img{object-position:53% 45%;transform:scale(1.25);transform-origin:53% 55%}.hero-copy{padding-top:275px}}
 /* Shared contour motif: transparent linework at the section edge, without glow. */
-.hero-art{inset:auto 0 0;width:100%;height:270px;opacity:.42;mask-image:linear-gradient(transparent,#000 80%);-webkit-mask-image:linear-gradient(transparent,#000 80%)}
+.hero-art{inset:auto 0 0;width:100%;height:270px;z-index:2;opacity:.68;mask-image:linear-gradient(transparent,#000 45%);-webkit-mask-image:linear-gradient(transparent,#000 45%)}
 .hero-art>img{object-fit:fill;object-position:center bottom}
 .hero-bottom{background:transparent}
-.approach:before{inset:auto 0 0;height:250px;background:url('../assets/brand/flow-contours.svg') center bottom/100% 100% no-repeat;opacity:.22}
-.reference-hero:before{inset:auto 0 0;height:210px;background:url('../assets/brand/flow-contours.svg') center bottom/100% 100% no-repeat;opacity:.32}
-@media(max-width:640px){.hero-art{height:140px;opacity:.2}.approach:before{height:150px;opacity:.15}.reference-hero:before{height:130px;opacity:.2}}
+.approach:before{inset:auto 0 0;height:250px;background:url('../assets/brand/flow-contours.svg') center bottom/100% 100% no-repeat;opacity:.42}
+.reference-hero:before{inset:auto 0 0;height:210px;background:url('../assets/brand/flow-contours.svg') center bottom/100% 100% no-repeat;opacity:.55}
+@media(max-width:640px){.hero-art{height:160px;opacity:.5}.approach:before{height:150px;opacity:.32}.reference-hero:before{height:130px;opacity:.4}}
 @media print{.hero-art,.approach:before,.reference-hero:before{display:none}}
