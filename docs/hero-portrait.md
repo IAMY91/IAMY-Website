@@ -1,11 +1,11 @@
-# Workshop hero photograph
+# Original workshop hero photograph
 
-The homepage uses the workshop photograph explicitly selected by Ilya in this chat. The same original photograph is already present in the repository as `Bilder/UF26_102_Kristjan_Kuzmanoski_websize.jpg` and `assets/gallery/urban-future-facilitation.jpg`.
+The homepage uses Ilya's selected original workshop photograph, unchanged:
 
-- Original: 1474 × 983 pixels; preserved unchanged.
-- Hero asset: `assets/brand/ilya-yacine-workshop-hero.webp`, 1536 × 1024 pixels.
-- An AI-assisted image edit improves the lighting, colour balance and perceived detail, reduces bright window highlights and the prominence of the red foreground sleeve, and softens the peripheral background. This is an enhanced derivative, not an unedited original.
-- The edited image is encoded as WebP for web delivery. Responsive CSS controls the hero crop and feathered edges, keeping the facilitator in focus while retaining the group context.
-- The original gallery and About-page photographs remain unchanged.
+- Served file: `assets/gallery/urban-future-facilitation.jpg`.
+- Original repository file: `Bilder/UF26_102_Kristjan_Kuzmanoski_websize.jpg`.
+- Dimensions: 1474 × 983 pixels.
+- The served file is byte-identical to the original repository photograph. No AI enhancement, retouching, colour grading, resizing or recompression was applied to the image file.
+- Existing responsive CSS handles its placement and feathered edges in the hero layout. No image filter is applied.
 
-The previously used CREATE speaker portrait is retained as an unused asset. Its source was https://wemaco.eu/create-speaker/ilya-alexander-yacine/ (original image: https://wemaco.eu/wp-content/uploads/2024/03/Ilya.jpg).
+The previously generated enhanced derivative has been removed from the site. Gallery and About-page images remain unchanged.
