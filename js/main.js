@@ -62,65 +62,40 @@ function initActiveNavHighlight() {
   sections.forEach((section) => observer.observe(section));
 }
 
-// Kein eigenes Backend: Das Formular bereitet eine E-Mail vor. Der sichtbare
-// Link öffnet anschließend das E-Mail-Programm. Die Eingaben bleiben erhalten.
-// TODO: Bei Bedarf durch einen echten Formular-Backend-Dienst ersetzen
-// (z.B. eigenes Backend, Formspree, Netlify Forms).
-const CONTACT_EMAIL = 'ilyalex.yacine@gmail.com';
-
-const FIELD_LABELS = {
-  name: IS_EN ? 'Name' : 'Name',
-  email: IS_EN ? 'Email' : 'E-Mail',
-  service: IS_EN ? 'Service' : 'Leistungsart',
-  date: IS_EN ? 'Preferred date' : 'Wunschtermin',
-  format: 'Format',
-  message: IS_EN ? 'Message' : 'Nachricht',
-};
-
-function initFormPlaceholders() {
-  document.querySelectorAll('form[data-demo-form]').forEach((form) => {
+// Enable direct sending only when the deployed endpoint reports readiness.
+async function initFormPlaceholders() {
+  const form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+  const fallback = document.querySelector('[data-contact-fallback]');
+  try {
+    const response = await fetch('/api/contact', { signal: AbortSignal.timeout(5000) });
+    if (!response.ok || !(await response.json()).ready) return;
+    form.hidden = false;
+    fallback.hidden = true;
+  } catch { return; }
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
     const status = form.querySelector('.form-status');
-
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      if (!form.reportValidity()) return;
-
-      const data = new FormData(form);
-      const senderName = (data.get('name') || '').toString().trim();
-      const senderEmail = (data.get('email') || '').toString().trim();
-
-      const bodyLines = [];
-      data.forEach((value, key) => {
-        const field = form.elements.namedItem(key);
-        const text = field instanceof HTMLSelectElement
-          ? field.selectedOptions[0]?.textContent.trim()
-          : value.toString().trim();
-        if (!text) return;
-        bodyLines.push(`${FIELD_LABELS[key] || key}: ${text}`);
-      });
-      if (senderEmail) {
-        bodyLines.push('', `${IS_EN ? 'Please reply to' : 'Antwort bitte an'}: ${senderEmail}`);
-      }
-
-      const subject = senderName
-        ? `${IS_EN ? 'AIRFLOW website enquiry from' : 'Anfrage über AIRFLOW-Website von'} ${senderName}`
-        : (IS_EN ? 'AIRFLOW website enquiry' : 'Anfrage über AIRFLOW-Website');
-      const mailtoUrl =
-        `mailto:${CONTACT_EMAIL}` +
-        `?subject=${encodeURIComponent(subject)}` +
-        `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-
-      if (status) {
-        status.textContent =
-          IS_EN ? 'Your enquiry is ready. Open the draft and send it from your email application: ' : 'Deine Anfrage ist vorbereitet. Öffne jetzt den Entwurf und sende ihn in deinem E-Mail-Programm ab: ';
-        const fallback = document.createElement('a');
-        fallback.href = mailtoUrl;
-        fallback.textContent = IS_EN ? 'Open email draft' : 'Jetzt E-Mail-Entwurf öffnen';
-        status.append(fallback);
-        status.classList.add('is-visible');
-      }
-    });
+    const button = form.querySelector('[type="submit"]');
+    const data = Object.fromEntries(new FormData(form));
+    data.service = form.querySelector('select').selectedOptions[0].textContent.trim();
+    button.disabled = true;
+    form.setAttribute('aria-busy', 'true');
+    status.dataset.state = 'pending';
+    status.textContent = IS_EN ? 'Sending your message…' : 'Deine Nachricht wird gesendet…';
+    try {
+      const response = await fetch('/api/contact', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:AbortSignal.timeout(15000)});
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error('delivery');
+      status.dataset.state = 'success';
+      status.textContent = IS_EN ? 'Thank you. Your message has been sent to Ilya.' : 'Danke. Deine Nachricht wurde an Ilya gesendet.';
+      form.reset();
+    } catch {
+      status.dataset.state = 'error';
+      status.textContent = IS_EN ? 'Your message could not be confirmed. Your entries are still here. Please try again or email Ilya directly.' : 'Der Versand konnte nicht bestätigt werden. Deine Eingaben bleiben erhalten. Bitte versuche es erneut oder schreibe Ilya direkt per E-Mail.';
+      fallback.hidden = false;
+    } finally { button.disabled = false; form.removeAttribute('aria-busy'); }
   });
 }
 

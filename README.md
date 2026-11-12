@@ -10,7 +10,7 @@ Im Repository:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketinstallation noch Build-Schritt oder Backend. Schriften und Gestaltungselemente liegen lokal im Repository.
+Python 3 genügt für den Entwicklungsserver. Die statischen Seiten benötigen weder Paketinstallation noch Build-Schritt. Der optionale Kontaktversand nutzt eine separat konfigurierte Vercel-Funktion. Schriften und Gestaltungselemente liegen lokal im Repository.
 
 ## Aufbau
 
@@ -43,7 +43,9 @@ Der Test prüft die responsive Darstellung von 320 bis 1440 Pixeln, Navigation u
 
 ## Kontaktformular
 
-Das Formular bereitet eine E-Mail vor. Ein anschließend angezeigter Link öffnet den Entwurf im E-Mail-Programm. Erst dort kann die Nachricht versendet werden. Es gibt keinen serverseitigen Versand und keine Speicherung der Formulardaten auf der Website.
+`api/contact.js` implements a Vercel contact endpoint using server-side email delivery. Direct sending is disabled by default; visitors see a single-click email link. The form appears only when the endpoint confirms configured readiness. See `docs/contact-setup.md` for activation and `docs/legal-details-needed.md` for missing owner information.
+
+Run `node --test tests/contact-api.cjs` for mocked delivery, readiness, validation and failure checks. No email is sent by the tests.
 
 ## Languages and perspective model
 
