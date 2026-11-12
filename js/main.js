@@ -101,8 +101,8 @@ function initFormPlaceholders() {
       }
 
       const subject = senderName
-        ? `Anfrage über flowards-Website von ${senderName}`
-        : 'Anfrage über flowards-Website';
+        ? `Anfrage über AIRFLOW-Website von ${senderName}`
+        : 'Anfrage über AIRFLOW-Website';
       const mailtoUrl =
         `mailto:${CONTACT_EMAIL}` +
         `?subject=${encodeURIComponent(subject)}` +

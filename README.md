@@ -1,6 +1,6 @@
-# FLOWARDS · Ilya Alexander Yacine
+# AIRFLOW · Ilya Alexander Yacine
 
-Statische Website für Organisationsentwicklung, Leadership Coaching und Facilitation. Die aktuelle Gestaltung verbindet eine StoryBrand-SB7-Struktur mit einer petrolfarbenen, goldenen und biomimetischen Bildsprache. Das Hero-Porträt geht durch CSS-Masken in den Slogan über.
+Statische Website für Organisationsentwicklung, Leadership Coaching und Facilitation. Die aktuelle Gestaltung nutzt tiefe Petrolflächen, cremefarbene Serifentitel, türkisfarbene Verbindungslinien und zurückhaltende goldene Akzente. Die Startseite verbindet Flow Science, Biomimicry und KI mit Organisationsentwicklung und konkreten Anwendungen.
 
 ## Lokal starten
 
@@ -19,7 +19,10 @@ Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketi
 - `docs/logo-sources-a.json` / `docs/logo-sources-b.json`: recherchierte Original-Logoquellen.
 - `docs/reference-content.md`: Inhaltseinordnung, Logoherkunft und Designhinweise.
 - `ueber-mich.html`: eigenständige Vorstellung mit Qualifikationen, Lebenslauf-Download und beruflicher Timeline.
-- `css/flowards.css`: gemeinsames Design für Startseite, Blog und rechtliche Seiten.
+- `css/flowards.css`: bestehende Layout- und Komponentenbasis.
+- `css/airflow.css`: gemeinsames AIRFLOW-Design für alle veröffentlichten Seiten.
+- `assets/brand/personal-mark.svg`: Originalemblem aus dem bereitgestellten LinkedIn-Banner, über einen SVG-Ausschnitt eingebunden.
+- `assets/brand/airflow-network.svg`: dekorative, organische Verbindungslinien.
 - `js/main.js`: Navigation, Kontaktentwurf, Angebotsauswahl und Methoden-Popover.
 - `assets/brand/flow-botanical.svg`: eigenständige biomimetische Liniengrafik.
 - `blog/`: vorhandene Artikel im gemeinsamen Design.
