@@ -21,7 +21,7 @@ Python 3 genügt für den Entwicklungsserver. Die Website benötigt weder Paketi
 - `ueber-mich.html`: eigenständige Vorstellung mit Qualifikationen, Lebenslauf-Download und beruflicher Timeline.
 - `css/flowards.css`: bestehende Layout- und Komponentenbasis.
 - `css/airflow.css`: gemeinsames AIRFLOW-Design für alle veröffentlichten Seiten.
-- `assets/brand/personal-mark.svg`: Originalemblem aus dem bereitgestellten LinkedIn-Banner, über einen SVG-Ausschnitt eingebunden.
+- `assets/brand/personal-mark.svg`: Vektorfassung des vom Nutzer bereitgestellten Originalemblems.
 - `assets/brand/airflow-network.svg`: dekorative, organische Verbindungslinien.
 - `js/main.js`: Navigation, Kontaktentwurf, Angebotsauswahl und Methoden-Popover.
 - `assets/brand/flow-botanical.svg`: eigenständige biomimetische Liniengrafik.

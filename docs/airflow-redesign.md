@@ -4,7 +4,9 @@ Ilya Alexander Yacine remains the personal identity. AIRFLOW is his evolving fra
 
 Deep petrol #032529 / #052f33, ivory #f4efdf, turquoise #71d2ce and gold #e5bb69. Georgia serif headings and local Urbanist body fonts. Shared theme in css/airflow.css includes responsive layouts and reduced-motion support. Existing project records, qualifications, downloads and legal content are retained.
 
-The supplied LinkedIn_Ilya_Alexander_Yacine_1584x396.png contains the established personal emblem. personal-mark.svg embeds that original image and selects the emblem with its viewport. It does not redraw the mark. It appears in the header and favicon of all nine live pages. Source: ChatGPT Library file libfile_984849c807c881918d6968cc2d988759.
+The supplied image(20261112-101901).png is the authoritative logo reference (Library file libfile_e435bacf29088191a800c8abc0c266b0). personal-mark.svg traces its original gold I and turquoise arms directly into a lightweight SVG, preserving the silhouette and proportions. It replaces the earlier banner-derived mark. All nine live pages use this mark in the header and favicon.
+
+12 November refinement: brighter petrol surfaces, stronger luminous turquoise, brighter ivory text and subtle gold glow. Corrected inherited low-contrast project descriptions and the selected skill-button state. Text/background contrast checks on all nine live pages found no visible text below 4.5:1 against computed solid background colors; gradients and photographs were visually reviewed. This is a targeted readability check, not a full accessibility certification.
 
 Validation:
 - JavaScript syntax and git diff whitespace checks pass.
