@@ -115,3 +115,35 @@ p{color:inherit}.item-number,.section-light .item-number{color:var(--gold)}
 .case-study dd,.case-study .context{color:#e0efeb}.case-study .context{font-size:15px}.case-study dt{color:#ffcf70}
 @media(max-width:1200px) and (min-width:901px){.main-nav{font-size:11px}.brand-byline{font-size:8px}}
 @media(max-width:640px){.main-nav{font-size:16px}.brand-byline{font-size:7px}.orbit-label{font-size:10px}.diagram-caption{font-size:9px;letter-spacing:.1em}.hero-note{font-size:12px}.hero-bottom{font-size:10px}.hero-aside{min-height:340px}.service-card .item-number{font-size:10px}.plan-outcome{font-size:12px}.case-content .eyebrow{font-size:11px}.footer-bottom{font-size:11px}.framework-note{font-size:13px}}
+/* Bilingual navigation remains available outside the collapsible menu. */
+.header-controls{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.language-switch{display:flex;align-items:center;gap:3px;font-size:11px;line-height:1;white-space:nowrap}
+.language-switch a{padding:10px 5px;min-height:36px;display:inline-flex;align-items:center;color:#c8e4dc;font-weight:600;letter-spacing:.04em}
+.language-switch a[aria-current]{color:#8ffff0;border-bottom:1px solid #56efdc}
+.language-switch a:hover{color:#ffcf70}.language-switch>span{color:#83a9a1}
+.header-inner{gap:18px}.main-nav{margin-left:auto;gap:17px;font-size:12px}
+.has-portrait .hero-inner{grid-template-columns:1.2fr 1fr;position:relative;z-index:2}
+.airflow-hero.has-portrait .hero-portrait--workshop{z-index:1;top:0;right:-5%;width:66%;height:100%;opacity:1;mask-image:linear-gradient(90deg,transparent 0%,#000 29%,#000 93%,transparent 100%),linear-gradient(180deg,#000 0%,#000 68%,transparent 96%);mask-composite:intersect;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 29%,#000 93%,transparent 100%),linear-gradient(180deg,#000 0%,#000 68%,transparent 96%);-webkit-mask-composite:source-in}
+.has-portrait .hero-portrait--workshop img{filter:none;opacity:1;object-position:53% 48%;transform:scale(1.12);transform-origin:53% 50%}
+.has-portrait .hero-photo-aside{position:relative;min-height:500px;align-self:stretch;align-items:flex-end;justify-content:flex-end;padding-bottom:5px}
+.hero-photo-aside>p{font-size:23px;line-height:1.35;text-shadow:0 2px 18px #04383e;position:relative;z-index:3}
+.hero-photo-aside>p em{font-size:45px}.has-portrait .hero-art{z-index:1;top:auto;bottom:0;width:70%;height:220px;opacity:.35;mask-image:linear-gradient(transparent,#000);-webkit-mask-image:linear-gradient(transparent,#000)}
+.has-portrait .hero-bottom{z-index:3}.has-portrait .hero-copy{z-index:3}.has-portrait .hero-description,.has-portrait .hero-lead{text-shadow:0 1px 8px #04383e}
+@media(max-width:1250px) and (min-width:1101px){.main-nav{font-size:10px;gap:12px}.main-nav .nav-cta{padding:10px}.brand-word{font-size:18px}.brand-byline{font-size:8px}.header-controls{gap:8px}.header-inner{gap:14px}}
+@media(max-width:1100px){.nav-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#063e44;padding:20px 32px 28px;border-bottom:1px solid var(--line);align-items:stretch;gap:0;font-size:16px;max-height:calc(100dvh - 80px);overflow-y:auto;margin:0}.main-nav.is-open{display:flex;flex-direction:column}.main-nav>a{padding:14px 0;border-bottom:1px solid var(--line)}.main-nav .nav-cta{padding:12px 18px;margin-top:18px}.header-controls{margin-left:auto}.header-inner{height:80px}.has-portrait .hero-inner{grid-template-columns:1.35fr .7fr}.has-portrait .hero-photo-aside{min-height:470px}.airflow-hero.has-portrait .hero-portrait--workshop{width:70%;right:-10%}.hero-photo-aside>p{font-size:18px}.hero-photo-aside>p em{font-size:34px}}
+@media(max-width:640px){.header-inner{height:76px;gap:10px}.header-controls{gap:8px}.language-switch{font-size:10px;gap:1px}.language-switch a{padding:8px 4px}.brand{gap:8px}.brand-mark{width:32px;height:36px}.brand-word{font-size:15px;max-width:clamp(110px,32vw,145px)}.brand-byline{display:none}.nav-toggle{width:38px;height:38px;font-size:22px}.has-portrait .hero-inner{display:flex;flex-direction:column;gap:0;padding-top:300px}.airflow-hero.has-portrait .hero-portrait--workshop{top:0;right:0;width:100%;height:355px;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 95%,transparent),linear-gradient(#000 40%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 95%,transparent),linear-gradient(#000 40%,transparent 100%)}.has-portrait .hero-portrait--workshop img{transform:scale(1.07);object-position:53% 45%}.has-portrait .hero-photo-aside{min-height:0;align-self:stretch;padding:30px 0;text-align:left;justify-content:flex-start}.hero-photo-aside>p{font-size:20px}.hero-photo-aside>p em{font-size:34px}.has-portrait .hero-art{height:180px;width:100%;opacity:.25}.has-portrait .hero-copy{width:100%;padding-top:0}}
+/* Four overlapping lenses, matching the supplied AIRFLOW model. */
+.perspective-model{max-width:840px;margin:0 auto 65px;position:relative}
+.perspective-model svg{display:block;width:100%;height:auto;overflow:visible}
+.perspective-model figcaption{text-align:center;font-size:14px;color:#e0efeb;max-width:660px;margin:10px auto 0}
+.model-label text,.model-core text{font-family:Georgia,'Times New Roman',serif;font-size:30px;fill:#fff7e6;stroke:none}
+.model-label .model-subtitle{font-family:Urbanist,Arial,sans-serif;font-size:17px;fill:#96ffe9}
+.model-label path,.model-label circle,.model-label rect{fill:none;stroke:#ffcf70;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.model-core text{font-size:27px}.model-core .core-note{font-family:Urbanist,Arial,sans-serif;font-size:15px;fill:#ffcf70}
+.model-label-od text{font-size:27px}.perspective-model a:hover text,.perspective-model a:focus-visible text{fill:#ffcf70}
+.perspective-model a:focus-visible{outline:2px solid #8ffff0;outline-offset:8px}
+.lens-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:30px}.lens h3{font-size:28px}.lens>p{font-size:16px}
+@media(max-width:1100px){.lens-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px}.perspective-model{max-width:740px}}
+@media(max-width:640px){.lens-grid{grid-template-columns:1fr}.perspective-model{margin:0 -10px 40px}.perspective-model figcaption{padding-inline:15px;font-size:13px}.lens h3{font-size:30px}.lens>p{font-size:17px}}
+@media(max-width:640px){.perspective-model .model-subtitle,.perspective-model .core-note{display:none}.perspective-model .model-label text{font-size:34px}.perspective-model .model-label-od text{font-size:30px}.perspective-model .model-core text{font-size:30px}}
+.perspective-model{scroll-margin-top:120px}

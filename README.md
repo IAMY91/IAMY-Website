@@ -44,3 +44,13 @@ Der Test prüft die responsive Darstellung von 320 bis 1440 Pixeln, Navigation u
 ## Kontaktformular
 
 Das Formular bereitet eine E-Mail vor. Ein anschließend angezeigter Link öffnet den Entwurf im E-Mail-Programm. Erst dort kann die Nachricht versendet werden. Es gibt keinen serverseitigen Versand und keine Speicherung der Formulardaten auf der Website.
+
+## Languages and perspective model
+
+The original German pages remain at the root; complete English versions live under `en/`, including the About page, project references, three articles and the existing legal drafts. The DE / ENG selector links to the matching page and preserves the current section when JavaScript is available. The existing CV and external German articles remain in their original language and are labelled accordingly in English.
+
+Reviewed English copy lives in `translations/en.json`. After editing the German sources, update that mapping and run `python3 scripts/build-english.py`. Both languages share the same CSS, JavaScript, original hero photograph and personal emblem. Contact form labels, menu labels, email subject and draft status follow the selected document language.
+
+The homepage uses four overlapping, linked circles for Biomimicry, Flow Science, AI and Organizational Development, centered on Regenerative Organizations. The same anchors link each circle to a readable explanation. The original workshop photograph is restored beside the hero with responsive CSS fade masks.
+
+Run `python3 tests/bilingual-static.py` to check all 18 pages, matching language links and anchors, page structure and local assets.

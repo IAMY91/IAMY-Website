@@ -1,3 +1,5 @@
+const IS_EN = document.documentElement.lang === 'en';
+
 // FLOWARDS — Navigation, Kontaktanfrage und zugängliche Methoden-Popover.
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -6,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormPlaceholders();
   initSkillTooltips();
   initServiceLinks();
+  initLanguageLinks();
 });
 
 function initNavToggle() {
@@ -16,7 +19,7 @@ function initNavToggle() {
   const setOpen = (isOpen) => {
     nav.classList.toggle('is-open', isOpen);
     toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+    toggle.setAttribute('aria-label', IS_EN ? (isOpen ? 'Close menu' : 'Open menu') : (isOpen ? 'Menü schließen' : 'Menü öffnen'));
     toggle.textContent = isOpen ? '✕' : '☰';
   };
 
@@ -35,7 +38,7 @@ function initNavToggle() {
   document.addEventListener('click', (event) => {
     if (!nav.contains(event.target) && !toggle.contains(event.target)) setOpen(false);
   });
-  window.matchMedia('(min-width: 901px)').addEventListener('change', () => setOpen(false));
+  window.matchMedia('(min-width: 1101px)').addEventListener('change', () => setOpen(false));
 }
 
 function initActiveNavHighlight() {
@@ -66,12 +69,12 @@ function initActiveNavHighlight() {
 const CONTACT_EMAIL = 'ilyalex.yacine@gmail.com';
 
 const FIELD_LABELS = {
-  name: 'Name',
-  email: 'E-Mail',
-  service: 'Leistungsart',
-  date: 'Wunschtermin',
+  name: IS_EN ? 'Name' : 'Name',
+  email: IS_EN ? 'Email' : 'E-Mail',
+  service: IS_EN ? 'Service' : 'Leistungsart',
+  date: IS_EN ? 'Preferred date' : 'Wunschtermin',
   format: 'Format',
-  message: 'Nachricht',
+  message: IS_EN ? 'Message' : 'Nachricht',
 };
 
 function initFormPlaceholders() {
@@ -97,12 +100,12 @@ function initFormPlaceholders() {
         bodyLines.push(`${FIELD_LABELS[key] || key}: ${text}`);
       });
       if (senderEmail) {
-        bodyLines.push('', `Antwort bitte an: ${senderEmail}`);
+        bodyLines.push('', `${IS_EN ? 'Please reply to' : 'Antwort bitte an'}: ${senderEmail}`);
       }
 
       const subject = senderName
-        ? `Anfrage über AIRFLOW-Website von ${senderName}`
-        : 'Anfrage über AIRFLOW-Website';
+        ? `${IS_EN ? 'AIRFLOW website enquiry from' : 'Anfrage über AIRFLOW-Website von'} ${senderName}`
+        : (IS_EN ? 'AIRFLOW website enquiry' : 'Anfrage über AIRFLOW-Website');
       const mailtoUrl =
         `mailto:${CONTACT_EMAIL}` +
         `?subject=${encodeURIComponent(subject)}` +
@@ -110,10 +113,10 @@ function initFormPlaceholders() {
 
       if (status) {
         status.textContent =
-          'Deine Anfrage ist vorbereitet. Öffne jetzt den Entwurf und sende ihn in deinem E-Mail-Programm ab: ';
+          IS_EN ? 'Your enquiry is ready. Open the draft and send it from your email application: ' : 'Deine Anfrage ist vorbereitet. Öffne jetzt den Entwurf und sende ihn in deinem E-Mail-Programm ab: ';
         const fallback = document.createElement('a');
         fallback.href = mailtoUrl;
-        fallback.textContent = 'Jetzt E-Mail-Entwurf öffnen';
+        fallback.textContent = IS_EN ? 'Open email draft' : 'Jetzt E-Mail-Entwurf öffnen';
         status.append(fallback);
         status.classList.add('is-visible');
       }
@@ -162,4 +165,17 @@ function initServiceLinks() {
       service.value = link.dataset.service;
     });
   });
+}
+
+// Matching static language pages keep the current section, including without JS.
+function initLanguageLinks() {
+  const updateLinks = () => {
+    document.querySelectorAll('[data-language-link]').forEach((link) => {
+      const target = new URL(link.href, location.href);
+      target.hash = location.hash;
+      link.href = target.href;
+    });
+  };
+  updateLinks();
+  window.addEventListener('hashchange', updateLinks);
 }
